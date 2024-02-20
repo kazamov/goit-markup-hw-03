@@ -11,6 +11,8 @@
 	--hero-background-color: rgba(46, 47, 66, 0.7);
 	--white-color: #ffffff;
 	--modal-background-color: #fcfcfc;
+
+	--common-section-padding: 120px;
 }
 
 body {
@@ -49,6 +51,11 @@ img {
 	margin-right: auto;
 }
 
+.section {
+	padding-top: var(--common-section-padding);
+	padding-bottom: var(--common-section-padding);
+}
+
 .visually-hidden {
 	position: absolute;
 	width: 1px;
@@ -62,7 +69,7 @@ img {
 	overflow: hidden;
 }
 
-/*#region Misc */
+/*#endregion Misc */
 
 /*#region Typography */
 
@@ -227,14 +234,14 @@ img {
 
 .footer {
 	background-color: var(--dark-color);
+	padding-top: 100px;
+	padding-bottom: 100px;
 }
 
 .footer-container {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
-	padding-top: 100px;
-	padding-bottom: 100px;
 }
 
 .footer-text {
@@ -252,14 +259,14 @@ img {
 
 .hero-section {
 	background-color: var(--dark-color);
+	padding-top: 188px;
+	padding-bottom: 188px;
 }
 
 .hero-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 188px;
-	padding-bottom: 188px;
 }
 
 .hero-title {
@@ -269,11 +276,6 @@ img {
 
 .hero-title + .button {
 	margin-top: 48px;
-}
-
-.advantages-container {
-	padding-top: 120px;
-	padding-bottom: 120px;
 }
 
 .advantages-list {
@@ -294,11 +296,14 @@ img {
 	color: var(--dark-color);
 }
 
+.portfolio-section {
+	padding-bottom: var(--common-section-padding);
+}
+
 .portfolio-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-bottom: 120px;
 }
 
 .portfolio-list {
@@ -324,8 +329,6 @@ img {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 120px;
-	padding-bottom: 120px;
 }
 
 .team-cards {
@@ -361,12 +364,15 @@ img {
 
 /*#region Portfolio Page */
 
+.portfolio-page-section {
+	padding-top: 96px;
+	padding-bottom: var(--common-section-padding);
+}
+
 .portfolio-page-container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding-top: 96px;
-	padding-bottom: 120px;
 }
 
 .filters {
@@ -392,6 +398,10 @@ img {
 }
 
 .project-card__content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 8px;
 	padding: 32px 16px;
 	border: 1px solid var(--accent-color);
 }
