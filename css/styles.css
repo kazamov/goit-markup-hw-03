@@ -361,9 +361,39 @@ img {
 
 /*#region Portfolio Page */
 
+.portfolio-page-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 96px;
+	padding-bottom: 120px;
+}
+
+.filters {
+	display: flex;
+	gap: 24px;
+}
+
+.filters + .project-cards {
+	margin-top: 72px;
+}
+
+.project-cards {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	column-gap: 24px;
+	row-gap: 48px;
+}
+
 .project-card__link {
 	color: var(--dark-color);
 	text-decoration: none;
+}
+
+.project-card__content {
+	padding: 32px 16px;
+	border: 1px solid var(--accent-color);
 }
 
 .project-card__link-heading {
