@@ -239,8 +239,21 @@ img {
 	background-color: var(--dark-color);
 }
 
-.hero-section__title {
+.hero-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-top: 188px;
+	padding-bottom: 188px;
+}
+
+.hero-title {
 	color: var(--white-color);
+	max-width: 496px;
+}
+
+.hero-title + .button {
+	margin-top: 48px;
 }
 
 .advantages-list__item-heading {
