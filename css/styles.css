@@ -19,11 +19,52 @@ body {
 	color: var(--text-color);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
 ul {
+	margin: 0;
+	padding-left: 0;
 	list-style: none;
 }
 
-/* Typography */
+img {
+	display: block;
+}
+
+/*#region Misc */
+
+.container {
+	max-width: 1158px;
+	padding-left: 15px;
+	padding-right: 15px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+/*#region Misc */
+
+/*#region Typography */
 
 .heading-1 {
 	font-weight: 700;
@@ -52,7 +93,9 @@ ul {
 	letter-spacing: 0.02em;
 }
 
-/* Button */
+/*#endregion Typography */
+
+/*#region Button */
 
 .button {
 	border-radius: 4px;
@@ -93,13 +136,25 @@ ul {
 	color: var(--white-color);
 }
 
-/* Header */
+/*#endregion Button */
+
+/*#region Header */
 
 .header {
 	border-bottom: 1px solid var(--accent-color);
 }
 
-/* Logo */
+.header-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-top: 24px;
+	padding-bottom: 24px;
+}
+
+/*#endregion Header */
+
+/*#region Logo */
 
 .logo {
 	font-family: 'Raleway';
@@ -119,7 +174,21 @@ ul {
 	color: var(--primary-brand-color);
 }
 
-/* Navigation */
+/*#endregion Logo */
+
+/*#region Navigation */
+
+.navigation {
+	display: flex;
+	align-items: center;
+	gap: 76px;
+}
+
+.navigation-menu {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
 
 .navigation-menu__item-link {
 	color: var(--dark-color);
@@ -133,6 +202,12 @@ ul {
 	color: var(--pressed-state-color);
 }
 
+.address-list {
+	display: flex;
+	align-items: center;
+	gap: 40px;
+}
+
 .address-list__item-link {
 	color: var(--text-color);
 	font-style: normal;
@@ -144,7 +219,10 @@ ul {
 	color: var(--pressed-state-color);
 }
 
-/* Footer */
+/*#endregion Navigation */
+
+/*#region Footer */
+
 .footer {
 	background-color: var(--dark-color);
 }
@@ -153,7 +231,9 @@ ul {
 	color: var(--light-color);
 }
 
-/* Studio */
+/*#endregion Footer */
+
+/*#region Studio Page */
 
 .hero-section {
 	background-color: var(--dark-color);
@@ -180,7 +260,9 @@ ul {
 	background-color: var(--light-color);
 }
 
-/* Portfolio */
+/*#endregion Studio Page */
+
+/*#region Portfolio Page */
 
 .project-card__link {
 	color: var(--dark-color);
@@ -190,3 +272,5 @@ ul {
 .project-card__link-heading {
 	color: var(--dark-color);
 }
+
+/*#endregion Portfolio Page */
